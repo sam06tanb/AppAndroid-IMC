@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tema"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CALCULADORA DE IMC"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editPeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        android:text="Digite seu peso" />
+
+    <EditText
+        android:id="@+id/editAltura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        android:text="Digite sua altura" />
+
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resultado:"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/calcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="calcularImc"
+        android:text="Calcular"
+        android:textSize="20sp" />
+</LinearLayout>
